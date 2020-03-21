@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="BorderlessWPFWindow.TitleBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BorderlessWPFWindow"
+             mc:Ignorable="d" 
+             d:DesignHeight="32" d:DesignWidth="300">
+    <Grid>
+        <DockPanel Name="titleBar" VerticalAlignment="Top" Height="32" LastChildFill="False" MouseDown="DockPanel_MouseDown" MouseUp="DockPanel_MouseUp" Background="#00000000">
+            <Button Style="{StaticResource CloseButtonStyle}" x:Name="btn_close" Content="&#xE8BB;" Margin="0,0,0,0" Width="45" Click="btn_close_Click" DockPanel.Dock="Right" BorderThickness="0"/>
+            <Button Style="{StaticResource MaxMinButtonStyle}" x:Name="btn_maximize" Content="&#xE922;" Margin="0,0,0,0" Width="45" Click="btn_maximize_Click" DockPanel.Dock="Right" BorderThickness="0"/>
+            <Button Style="{StaticResource MaxMinButtonStyle}" x:Name="btn_minimize" Content="&#xE921;" Margin="0,0,0,0" Width="45" Click="btn_minimize_Click" DockPanel.Dock="Right" BorderThickness="0"/>
+        </DockPanel>
+    </Grid>
+</UserControl>

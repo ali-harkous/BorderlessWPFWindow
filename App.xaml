@@ -1,0 +1,76 @@
+﻿<Application x:Class="BorderlessWPFWindow.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BorderlessWPFWindow"
+             StartupUri="WindowTemplate.xaml">
+    <Application.Resources>
+
+
+        <Storyboard x:Key="FadeOutAnimation" Storyboard.TargetProperty="Opacity"
+                FillBehavior="HoldEnd">
+            <!-- <=================== -->
+            <DoubleAnimation To="0.6" Duration="0:0:0.2" />
+        </Storyboard>
+
+        <Storyboard x:Key="FadeInAnimation" Storyboard.TargetProperty="Opacity"
+                FillBehavior="HoldEnd">
+            <!-- <=================== -->
+            <DoubleAnimation To="1.0" Duration="0:0:0.2" />
+        </Storyboard>
+
+        <Style x:Key="GeneralButton" TargetType="{x:Type Button}">
+            <Setter Property="TextBlock.FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="TextBlock.Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Opacity" Value="0.6"/>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard Storyboard="{StaticResource FadeInAnimation}"/>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard Storyboard="{StaticResource FadeOutAnimation}"/>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+
+        <Style x:Key="MaxMinButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource GeneralButton}">
+            <Setter Property="Background" Value="#FF323232"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Focusable" Value="False"/>
+        </Style>
+        
+        
+        <Style x:Key="CloseButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource GeneralButton}">
+            <Setter Property="Background" Value="#FFE80000"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Focusable" Value="False"/>
+        </Style>
+        
+        <BitmapImage x:Key="BackgroundImageResource" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="/Pictures/clark-van-der-beken-1S0BJeKXkbs-unsplash.jpg"/>
+
+
+    </Application.Resources>
+</Application>
