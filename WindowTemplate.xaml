@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BorderlessWPFWindow"
+        xmlns:local="clr-namespace:BorderlessWPFWindow" xmlns:shell="http://schemas.microsoft.com/winfx/2006/xaml/presentation/shell"
         mc:Ignorable="d"
         Title="Window" Height="639.5" Width="993" StateChanged="Window_StateChanged" BorderThickness="0.5,0.5,0.5,0.5" BorderBrush="White">
 
-    <WindowChrome.WindowChrome>
-        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" ResizeBorderThickness="2"/>
-    </WindowChrome.WindowChrome>
+    <shell:WindowChrome.WindowChrome>
+        <shell:WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" ResizeBorderThickness="2"/>
+    </shell:WindowChrome.WindowChrome>
     <Grid VerticalAlignment="Top">
         <Image x:Name="image" Margin="0,0,0,0" Source="{DynamicResource BackgroundImageResource}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
         <Rectangle>

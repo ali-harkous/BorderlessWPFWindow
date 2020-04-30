@@ -49,3 +49,8 @@ C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\Borderless
 C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\obj\Debug\BorderlessWPFWindow.g.resources
 C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\obj\Debug\BorderlessWPFWindow.Properties.Resources.resources
 C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\obj\Debug\BorderlessWPFWindow.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\obj\Debug\BorderlessWPFWindow.csprojAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\obj\Debug\BorderlessWPFWindow.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\BorderlessWPFWindow\BorderlessWPFWindow\obj\Debug\BorderlessWPFWindow.csproj.CopyComplete
